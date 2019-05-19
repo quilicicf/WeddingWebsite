@@ -1,0 +1,21 @@
+.save-the-date {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  .wedding-location {
+    width: 100%;
+    height: 80%;
+    background: no-repeat center url("../img/domaine_valmont_2.jpg");
+  }
+
+  .announcement {
+    font-size: 2rem;
+  }
+
+  .date {
+    font-size: 1.2rem;
+  }
+}
