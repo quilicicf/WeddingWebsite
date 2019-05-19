@@ -1,0 +1,44 @@
+{
+  "name": "weddingwebsite",
+  "version": "1.0.0",
+  "description": "My open-source wedding website",
+  "scripts": {
+    "start": "parcel ./index.html",
+    "build": "parcel build ./index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quilicicf/WeddingWebsite.git"
+  },
+  "keywords": [
+    "wedding",
+    "website",
+    "open",
+    "source"
+  ],
+  "author": "quilicicf",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/quilicicf/WeddingWebsite/issues"
+  },
+  "homepage": "https://github.com/quilicicf/WeddingWebsite#readme",
+  "devDependencies": {
+    "@babel/core": "7.4.4",
+    "@babel/preset-env": "7.4.4",
+    "@talend/eslint-config": "2.0.1",
+    "babel-eslint": "9.0.0",
+    "eslint": "5.6.0",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jest": "21.22.0",
+    "parcel-bundler": "1.12.3",
+    "sass": "^1.20.1"
+  },
+  "dependencies": {
+    "bootstrap": "4.3.1",
+    "jquery": "3.4.1",
+    "normalize.css": "8.0.1",
+    "popper": "1.0.1",
+    "popper.js": "^1.15.0"
+  }
+}
