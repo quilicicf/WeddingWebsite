@@ -49,32 +49,33 @@
 
     <div class="form-group">
       <label for="email">Email</label>
-      <input type="email" class="form-control" id="email" placeholder="Pour recevoir les informations pratiques">
+      <input type="email" name="email" class="form-control" id="email" placeholder="Pour recevoir les informations pratiques">
     </div>
 
     <div class="answer">
       <div class="form-check form-check">
-        <input class="form-check-input" type="radio" id="oneAttendee" value="1">
+        <input class="form-check-input" type="radio" name="attendees" id="oneAttendee" value="1">
         <label class="form-check-label" for="oneAttendee">Je serai là! <span class="small">seul(e)</span></label>
       </div>
       <div class="form-check form-check">
-        <input class="form-check-input" type="radio" id="twoAttendees" value="2" checked>
+        <input class="form-check-input" type="radio" name="attendees" id="twoAttendees" value="2" checked>
         <label class="form-check-label" for="twoAttendees">Nous serons là! <span class="small">tous les deux</span></label>
       </div>
       <div class="form-check form-check">
-        <input class="form-check-input" type="radio" id="noAttendees" value="0">
+        <input class="form-check-input" type="radio" name="attendees" id="noAttendees" value="0">
         <label class="form-check-label" for="noAttendees">Je/nous ne pourrons pas être là.</label>
       </div>
     </div>
 
     <div class="form-group">
       <label for="children">Enfants</label>
-      <input type="number" class="form-control" id="children" value="0" min="0" max="5" />
+      <input type="number" name="children" class="form-control" id="children" value="0" min="0" max="5" />
     </div>
 
     <div class="form-group">
       <label for="allergy">J'ai des allergies/je suis végétarien!</label>
-      <textarea class="form-control" id="allergy" cols="20" about="" rows="3" placeholder="A détailler ici!"></textarea>
+      <textarea class="form-control" name="allergy" id="allergy" cols="20" about="" rows="3" placeholder="A détailler ici!">
+      </textarea>
     </div>
 
     <div class="form-group">
