@@ -25,10 +25,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#intro">How we met</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#events">Events</a>
+        <a class="nav-link" href="#rsvp">RSVP</a>
       </li>
     </ul>
   </div>
@@ -37,7 +34,53 @@
 <section class="save-the-date">
   <div class="wedding-location"></div>
   <h1 class="announcement">On se marie!</h1>
-  <p class="date">Le 15 Août  2020 au domaine de Valmont à Barsac</p>
+  <p class="date">Le 15 Août 2020 au domaine de Valmont à Barsac</p>
+</section>
+
+<section id="rsvp" class="rsvp">
+  <h1 class="announcement">RSVP</h1>
+  <p class="deadline">Réponse attendue avant Octobre</p>
+
+  <form name="RSVP" method="POST" data-netlify="true">
+    <div class="form-group">
+      <label for="code">Code</label>
+      <input type="text" class="form-control" id="code" placeholder="Code reçu dans le faire-part">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" placeholder="Pour recevoir les informations pratiques">
+    </div>
+
+    <div class="answer">
+      <div class="form-check form-check">
+        <input class="form-check-input" type="radio" id="oneAttendee" value="1">
+        <label class="form-check-label" for="oneAttendee">Je serai là! <span class="small">seul(e)</span></label>
+      </div>
+      <div class="form-check form-check">
+        <input class="form-check-input" type="radio" id="twoAttendees" value="2" checked>
+        <label class="form-check-label" for="twoAttendees">Nous serons là! <span class="small">tous les deux</span></label>
+      </div>
+      <div class="form-check form-check">
+        <input class="form-check-input" type="radio" id="noAttendees" value="0">
+        <label class="form-check-label" for="noAttendees">Je/nous ne pourrons pas être là.</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="children">Enfants</label>
+      <input type="number" class="form-control" id="children" value="0" min="0" max="5" />
+    </div>
+
+    <div class="form-group">
+      <label for="allergy">J'ai des allergies/je suis végétarien!</label>
+      <textarea class="form-control" id="allergy" cols="20" about="" rows="3" placeholder="A détailler ici!"></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">Répondre</button>
+    </div>
+  </form>
 </section>
 
 </body>

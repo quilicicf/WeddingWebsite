@@ -1,0 +1,23 @@
+.rsvp {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  .deadline {
+    font-size: .9rem;
+  }
+
+  form {
+    min-width: 500px;
+  }
+
+  .answer {
+    margin: 1rem 0;
+  }
+
+  .small {
+    color: $gray-600;
+  }
+}
