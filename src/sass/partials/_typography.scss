@@ -1,11 +1,17 @@
 // Typography partial
-@import "partials/colors";
+@import "./colors";
 
 // Fonts
 
-$sans-serif: 'Open Sans', sans-serif;
-$serif: Merriweather, Georgia, 'Times New Roman', serif;
-$accent-font: 'Nunito', sans-serif;
+@font-face {
+  font-family: sophia;
+  src: url("../fonts/sophia.otf");
+}
+
+@font-face {
+  font-family: tekton;
+  src: url("../fonts/TektonPro-Bold.otf");
+}
 
 // Weights
 
@@ -21,9 +27,10 @@ $font-size-h2: 40px;
 $font-size-h3: 24px;
 $font-size-h4: 18px;
 $font-size-h5: 15px;
-$font-size-p: 15px;
+$font-size-p: 30px;
 $nav-font-size: 13px;
 $blog-post-title: 11px;
+$input-font-size: 45px;
 
 // Responsive Sizes
 
