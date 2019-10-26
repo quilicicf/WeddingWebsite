@@ -1,12 +1,10 @@
+@import './partials/colors';
+
 .rsvp {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-
-  .deadline {
-    font-size: .9rem;
-  }
 
   form {
     min-width: 500px;
@@ -17,6 +15,6 @@
   }
 
   .small {
-    color: $gray-600;
+    color: $txt-secondary;
   }
 }
