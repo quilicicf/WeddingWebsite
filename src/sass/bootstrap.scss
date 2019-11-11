@@ -1,3 +1,4 @@
+$dark: #000000;
 $font-size-base: 1.5rem;
 
 $font-size-h1: floor(($font-size-base * 1.5));
@@ -8,12 +9,13 @@ $font-size-h3: ceil(($font-size-base * 1.1));
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins";
 
-@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/carousel";
+@import "../../node_modules/bootstrap/scss/forms";
 @import "../../node_modules/bootstrap/scss/nav";
 @import "../../node_modules/bootstrap/scss/navbar";
+@import "../../node_modules/bootstrap/scss/reboot";
 @import "../../node_modules/bootstrap/scss/transitions";
-@import "../../node_modules/bootstrap/scss/forms";
-@import "../../node_modules/bootstrap/scss/buttons";
 @import "../../node_modules/bootstrap/scss/type";
-@import "../../node_modules/bootstrap/scss/carousel";
+@import "../../node_modules/bootstrap/scss/utilities/background";
 @import "../../node_modules/bootstrap/scss/utilities/screenreaders";
