@@ -26,7 +26,13 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#rsvp">RSVP</a>
+        <a class="nav-link" href="#rsvp-anchor">RSVP</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#sy-rendre-anchor">S'y rendre</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#dress-code-anchor">Dress code</a>
       </li>
     </ul>
   </div>
@@ -43,13 +49,13 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="./src/img/domaine_valmont_2.jpg" class="wedding-location" />
-      </div>
-      <div class="carousel-item">
         <img src="./src/img/domaine_valmont_3.jpg" class="wedding-location" />
       </div>
       <div class="carousel-item">
         <img src="./src/img/domaine_valmont_4.jpg" class="wedding-location" />
+      </div>
+      <div class="carousel-item">
+        <img src="./src/img/domaine_valmont_2.jpg" class="wedding-location" />
       </div>
     </div>
     <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
@@ -69,8 +75,10 @@
   <p class="subtitle">Le 15 Août 2020 au domaine de Valmont à Barsac</p>
 </section>
 
+<hr class="divider">
+
 <section class="rsvp">
-  <h1 id="rsvp">RSVP</h1>
+  <h1 id="rsvp"><a class="anchor" name="rsvp-anchor">RSVP</a></h1>
   <p class="subtitle">Réponse attendue avant Février</p>
 
   <form name="RSVP" method="POST" data-netlify="true">
@@ -121,23 +129,42 @@
   </form>
 </section>
 
+<hr class="divider">
+
+<section class="sy-rendre">
+  <h1><a class="anchor" name="sy-rendre-anchor">S'y rendre</a></h1>
+  <p>Domaine de Valmont, 22 rue de la gare, 33720 Barsac</p>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2840.6178004446415!2d-0.3225627486620925!3d44.604842078997606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55131541e592c3%3A0x49734fc1aac6157f!2sCh%C3%A2teau%20H%C3%B4tel%20Domaine%20de%20Valmont!5e0!3m2!1sen!2sfr!4v1573473091199!5m2!1sen!2sfr"
+    width="800"
+    height="600"
+    frameborder="0"
+    style="border:0;"
+    allowfullscreen="1">
+  </iframe>
+</section>
+
+<hr class="divider">
+
 <section class="dress-code">
-  <h1>Dress code</h1>
+  <h1><a class="anchor" name="dress-code-anchor">Dress code</a></h1>
   <div class="images">
     <div class="image">
       <div class="image-holder">
         <img src="./src/img/bride.png" alt="Bride">
       </div>
-      <p>Ongles<br>déjantés</p>
+      <p>Osez les ongles à motifs, flashy, fluos, à strass... Faites parler votre imagination !</p>
     </div>
     <div class="image">
       <div class="image-holder">
         <img src="./src/img/groom.png" alt="Groom">
       </div>
-      <p>Chaussettes<br>dépareillées</p>
+      <p>Osez les chaussettes dépareillées, qu'elles soient à motifs, à pois, basses, hautes... Epatez-nous !</p>
     </div>
   </div>
 </section>
+
+<div class="footer"></div>
 
 </body>
 </html>
