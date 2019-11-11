@@ -21,10 +21,8 @@ body, html {
 }
 
 $navbar-height: 62px;
-
-h1 {
-  color: $txt-secondary;
-}
+$divider-size: 4rem;
+$divider-margins: 2rem;
 
 section {
   display: flex;
@@ -38,10 +36,34 @@ section {
   padding-top: 90px;
 }
 
-.divider {
-  width: 60%;
-  margin: 2rem auto 2rem auto;
-  border: 1px solid $txt-secondary;
+h1 {
+  color: $txt-secondary;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+
+  &:before {
+    display: inline-block;
+    content: '';
+    margin-right: $divider-margins;
+    height: $divider-size;
+    width: $divider-size * 2;
+    background: url('../img/bamboo_green_left.png') no-repeat left;
+    background-size: (2 * $divider-size) ($divider-size);
+    transform: rotate(-15deg);
+  }
+
+  &:after {
+    display: inline-block;
+    content: '';
+    margin-left: $divider-margins;
+    height: $divider-size;
+    width: $divider-size * 2;
+    background: url('../img/bamboo_green_right.png') no-repeat right;
+    background-size: (2 * $divider-size) ($divider-size);
+    transform: rotate(15deg);
+  }
 }
 
 .subtitle {
