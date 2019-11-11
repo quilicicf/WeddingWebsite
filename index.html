@@ -12,8 +12,6 @@
 </head>
 <body>
 
-<script src="src/index.js"></script>
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white">
   <a class="navbar-brand" href="#" aria-label="Lien vers la page d'accueil">
     <img src="./src/img/logo_reverse.png" alt="Logo">
@@ -87,49 +85,50 @@
   <h1 id="rsvp"><a class="anchor" name="rsvp-anchor">RSVP</a></h1>
   <p class="subtitle">Réponse attendue avant Février</p>
 
-  <form name="RSVP" method="POST" data-netlify="true">
+  <form name="RSVP" method="POST" data-netlify="true" id="rsvp-form" class="code-invalid">
     <div class="form-group">
       <label for="code">Code</label>
-      <input type="text" name="code" class="form-control" id="code" placeholder="Code reçu dans le faire-part">
+      <input type="text" name="code" class="form-control" id="code" placeholder="Code reçu dans le faire-part (en majuscules)">
     </div>
 
-    <div class="form-group">
+    <div class="form-group if-valid-code">
       <label for="email">Email</label>
       <input type="email" name="email" class="form-control" id="email" placeholder="Pour recevoir les informations pratiques">
     </div>
 
-    <div class="answer">
-      <div class="form-check form-check">
-        <input class="form-check-input" type="radio" name="attendees" id="oneAttendee" value="1">
-        <label class="form-check-label" for="oneAttendee">Je serai là! <span class="small">seul(e)</span></label>
+    <div class="answer if-valid-code">
+      <div class="form-check form-check" id="oneAttendeeOption">
+        <input class="form-check-input" type="radio" name="attendees" id="oneAttendee" value="1" checked>
+        <label class="form-check-label" for="oneAttendee">Je serai là !</label>&nbsp;<span class="small green precision">seul(e)</span>
       </div>
-      <div class="form-check form-check">
-        <input class="form-check-input" type="radio" name="attendees" id="twoAttendees" value="2" checked>
-        <label class="form-check-label" for="twoAttendees">Nous serons là! <span class="small">tous les deux</span></label>
+      <div class="form-check form-check" id="twoAttendeesOption">
+        <input class="form-check-input" type="radio" name="attendees" id="twoAttendees" value="2">
+        <label class="form-check-label" for="twoAttendees">Je serai là !</label>&nbsp;<span class="small green precision">accompagné(e)</span>
       </div>
-      <div class="form-check form-check">
+      <div class="form-check form-check" id="noAttendeesOption">
         <input class="form-check-input" type="radio" name="attendees" id="noAttendees" value="0">
         <label class="form-check-label" for="noAttendees">Je/nous ne pourrons pas être là.</label>
       </div>
     </div>
 
-    <div class="form-group">
+    <div class="form-group if-valid-code" id="childrenOption">
       <label for="children">Enfants</label>
       <input type="number" name="children" class="form-control" id="children" value="0" min="0" max="5" />
+      <p class="small gray">Nous contacterons les parents par email pour organiser le baby-sitting.</p>
     </div>
 
-    <div class="form-group">
-      <label for="allergy">J'ai des allergies/je suis végétarien!</label>
+    <div class="form-group if-valid-code">
+      <label for="allergy">J'ai des allergies/je suis végétarien !</label>
       <textarea class="form-control"
                 name="allergy"
                 id="allergy"
                 cols="20"
                 about=""
                 rows="3"
-                placeholder="A détailler ici!"></textarea>
+                placeholder="A détailler ici !"></textarea>
     </div>
 
-    <div class="form-group">
+    <div class="form-group if-valid-code">
       <button type="submit" class="btn btn-primary">Répondre</button>
     </div>
   </form>
@@ -173,5 +172,6 @@
 
 <div class="footer"></div>
 
+<script src="src/index.js"></script>
 </body>
 </html>

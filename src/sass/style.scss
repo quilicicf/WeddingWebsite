@@ -52,6 +52,12 @@ section {
   height: 2rem;
 }
 
+.code-invalid {
+  .if-valid-code {
+    display: none;
+  }
+}
+
 *::placeholder {
   color: $form-placeholder !important;
 }
