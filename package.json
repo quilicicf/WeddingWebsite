@@ -23,16 +23,17 @@
   },
   "homepage": "https://github.com/quilicicf/WeddingWebsite#readme",
   "devDependencies": {
-    "@babel/core": "7.6.4",
-    "@babel/preset-env": "7.6.3",
+    "@babel/core": "7.7.2",
+    "@babel/preset-env": "7.7.1",
     "@talend/eslint-config": "2.1.0",
     "babel-eslint": "10.0.3",
     "eslint": "6.6.0",
     "eslint-config-airbnb": "18.0.1",
     "eslint-plugin-import": "2.18.2",
-    "eslint-plugin-jest": "22.20.1",
+    "eslint-plugin-jest": "23.0.3",
     "parcel-bundler": "1.12.4",
-    "sass": "^1.23.1"
+    "parcel-plugin-imagemin": "3.0.0",
+    "sass": "^1.23.3"
   },
   "dependencies": {
     "bootstrap": "4.3.1",
