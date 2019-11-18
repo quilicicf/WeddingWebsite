@@ -65,7 +65,9 @@ const codeField = document.getElementById('code');
 
 codeField.addEventListener('input', (event) => {
   const currentCode = event.target.value;
-  const pathInConfig = currentCode.split('');
+  const pathInConfig = currentCode.split('')
+    .filter(character => /^[A-Za-z0-9-]$/.test(character))
+    .map(character => character.toLocaleUpperCase());
   const configForCode = get(pathInConfig, config);
   if (has('n', configForCode)) {
     applyConfigForCode(configForCode);
