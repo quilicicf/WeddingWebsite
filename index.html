@@ -83,7 +83,7 @@
   <h1 id="rsvp"><a class="anchor" name="rsvp-anchor">RSVP</a></h1>
   <p class="subtitle">Réponse attendue avant le 1er Mars</p>
 
-  <form name="RSVP" method="POST" data-netlify="true" id="rsvp-form" class="code-invalid">
+  <form name="RSVP" method="POST" data-netlify="true" id="rsvp-form" class="code-invalid pristine">
     <div class="form-group">
       <label for="code">Code</label>
       <input type="text" name="code" class="form-control" id="code" placeholder="Code reçu dans le faire-part (en majuscules)">
@@ -91,7 +91,7 @@
 
     <div class="form-group if-valid-code">
       <label for="email">Email</label>
-      <input type="email" name="email" class="form-control" id="email" placeholder="Pour recevoir les informations pratiques">
+      <input type="email" name="email" class="form-control" id="email" placeholder="Pour recevoir les informations pratiques" required>
     </div>
 
     <div class="answer if-valid-code">
@@ -127,7 +127,7 @@
     </div>
 
     <div class="form-group if-valid-code">
-      <button type="submit" class="btn btn-primary">Répondre</button>
+      <button type="submit" id="submit-rsvp" class="btn btn-primary">Répondre</button>
     </div>
   </form>
 </section>

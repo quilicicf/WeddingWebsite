@@ -76,3 +76,6 @@ codeField.addEventListener('input', (event) => {
   }
 });
 
+const submitButton = document.getElementById('submit-rsvp');
+
+submitButton.onclick = () => rsvpForm.classList.remove('pristine');

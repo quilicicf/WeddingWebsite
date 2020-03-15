@@ -39,13 +39,14 @@ section {
 
 h1 {
   color: $txt-secondary;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: center;
+  margin: 2rem 0;
+  position: relative;
+  padding: 0 ($divider-size * 2.5);
 
   &:before {
-    display: inline-block;
+    position: absolute;
+    top: 1rem;
+    left: 0;
     content: '';
     margin-right: $divider-margins;
     height: $divider-size;
@@ -56,7 +57,9 @@ h1 {
   }
 
   &:after {
-    display: inline-block;
+    position: absolute;
+    top: 1rem;
+    right: 0;
     content: '';
     margin-left: $divider-margins;
     height: $divider-size;
@@ -65,6 +68,12 @@ h1 {
     background-size: (2 * $divider-size) ($divider-size);
     transform: rotate(15deg);
   }
+}
+
+form:not(.pristine) input:invalid {
+  border-color: $danger;
+  box-shadow: 0 0 0 0.2rem transparentize($danger, 0.7);
+  outline-color: $danger;
 }
 
 .subtitle {
