@@ -2,13 +2,25 @@
   p {
     margin-bottom: 1rem;
     line-height: 1.2em;
-    width: 80rem;
+    max-width: 90%;
     text-align: center;
   }
 
   img {
-    width: auto;
-    height: 60vh;
+    max-width: 90%;
+    height: auto;
     margin-bottom: 2rem;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    p {
+      max-width: 80rem;
+    }
+
+    img {
+      width: auto;
+      height: 60vh;
+      margin-bottom: 2rem;
+    }
   }
 }
