@@ -1,3 +1,4 @@
+@import "./icons";
 @import "./bootstrap";
 // Google Fonts
 //@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
@@ -22,7 +23,7 @@ body, html {
 }
 
 $navbar-height: 62px;
-$divider-size: 4rem;
+$divider-size: 3.6rem;
 $divider-margins: 2rem;
 
 section {
@@ -40,15 +41,13 @@ section {
   padding-top: $navbar-height * 1.1;
 }
 
-h1 {
-  color: $txt-secondary;
+h2 {
   margin: 2rem 0;
   position: relative;
   padding: 0 ($divider-size * 2.5);
 
   &:before {
     position: absolute;
-    top: 1rem;
     left: 0;
     content: '';
     margin-right: $divider-margins;
@@ -61,7 +60,6 @@ h1 {
 
   &:after {
     position: absolute;
-    top: 1rem;
     right: 0;
     content: '';
     margin-left: $divider-margins;
@@ -71,6 +69,11 @@ h1 {
     background-size: (2 * $divider-size) ($divider-size);
     transform: rotate(15deg);
   }
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 form:not(.pristine) input:invalid {
@@ -95,4 +98,13 @@ form:not(.pristine) input:invalid {
 
 *::placeholder {
   color: $form-placeholder !important;
+}
+
+a {
+  color: $txt-secondary;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: $txt-secondary-lighter;
 }

@@ -4,6 +4,7 @@
 $txt-primary: #000000;
 // body font
 $txt-secondary: #30685D;
+$txt-secondary-lighter: #479988;
 // heading font
 $txt-light: #fff;
 // header/hero
@@ -18,8 +19,9 @@ $accent-color-hover: #d3b56a;
 $white-color: #fff;
 $black-color: #000;
 // Typography colours
-$h2-color: #3D4351;
-$h3-color: #3D4351;
+$h1-color: $txt-secondary;
+$h2-color: $txt-secondary;
+$h3-color: $txt-secondary;
 $h5-color: #3D4351;
 // Layout colours
 $section-light: #fff;

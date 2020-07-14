@@ -47,6 +47,7 @@
 <div id="navbar-placeholder"></div>
 
 <section class="save-the-date">
+  <h1 class="sr-only">Cyp et Célie se marient!</h1>
   <div id="carousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -78,12 +79,12 @@
     </a>
   </div>
 
-  <h1><a class="anchor" name="save-the-date-anchor">On se marie !</a></h1>
+  <h2><a class="anchor" name="save-the-date-anchor">On se marie !</a></h2>
   <p class="subtitle">Le 15 Août 2020 au domaine de Valmont à Barsac</p>
 </section>
 
 <section class="rsvp">
-  <h1 id="rsvp"><a class="anchor" name="rsvp-anchor">RSVP</a></h1>
+  <h2 id="rsvp"><a class="anchor" name="rsvp-anchor">RSVP</a></h2>
   <p class="subtitle">Réponse attendue avant le 1er Mars</p>
 
   <form name="RSVP" method="POST" data-netlify="true" id="rsvp-form" class="code-invalid pristine">
@@ -136,7 +137,7 @@
 </section>
 
 <section class="sy-rendre">
-  <h1><a class="anchor" name="sy-rendre-anchor">S'y rendre</a></h1>
+  <h2><a class="anchor" name="sy-rendre-anchor">S'y rendre</a></h2>
   <p>Domaine de Valmont, 22 rue de la gare, 33720 Barsac</p>
   <iframe
     title="Carte Google map du lieu du marriage"
@@ -150,7 +151,7 @@
 </section>
 
 <section class="dress-code">
-  <h1><a class="anchor" name="dress-code-anchor">Dress code</a></h1>
+  <h2><a class="anchor" name="dress-code-anchor">Dress code</a></h2>
   <div class="images">
     <div class="image">
       <div class="image-holder">
@@ -168,16 +169,59 @@
 </section>
 
 <section class="gift">
-  <h1><a class="anchor" name="gift-anchor">Liste de mariage</a></h1>
-  <p>
+  <h2><a class="anchor" name="gift-anchor">Liste de mariage</a></h2>
+  <p class="subtitle">
     <span>Le thermomix, l'aspirateur Dyson ou la poussette tout terrain ne nous emballant pas vraiment,</span>
     <br>
     <span> nous vous proposons plutôt de nous aider à nous offrir notre voyage de noces.</span>
     <br>
     <span> Pour cette occasion, la destination qui nous ferait rêver est .... le Japon! </span>
   </p>
-  <img src="./src/img/japan_cherry_blossom.jpg" alt="Japon en fleurs" />
-  <p>Cagnotte en ligne en cours de préparation, une urne sera sur site le jour J.</p>
+
+  <p class="subtitle">
+    <!--  TODO: revoir le texte  -->
+    Le Japon étant bien trop vaste pour arriver à le visiter entièrement en une fois, nous avons établi plusieurs cagnottes pour les destinations
+    qui nous plaisent le plus. Nous suivront vos avis éclairés et passeront notre temps proportionnellement aux dons pour chaque destination.
+  </p>
+
+  <div class="gallery">
+    <div class="destination">
+      <img src="./src/img/osaka.jpg" alt="Picture of Osaka" class="destination-photo">
+      <h3>Osaka et ses environs</h3>
+      <p class="description">
+        Osaka est connue pour son incroyable richesse culinaire. La devise non-officielle de la ville serait même: "manger jusqu'à en tomber".
+        Au programme: découverte de la cuisine locale, promenade dans un cimetière digne des dessins de Kawasaki ou encore visite du plus beau château du Japon.
+      </p>
+      <a href="https://paypal.me/pools/c/8qPVvtPrXA" class="pool-link">Cagnotte Osaka <i class="icon-share"></i></a>
+    </div>
+    <div class="destination">
+      <img src="./src/img/kyoto.jpg" alt="Picture of Kyoto" class="destination-photo">
+      <h3>Kyoto et ses environs</h3>
+      <p class="description">
+        L'ancienne capitale niponne, Kyoto fait ressurgir le vieux Japon dans ses temples, ses sanctuaires colorés et ses jardins.
+        Au programme: visite de temples, gare de Kyoto, balade dans les jardins du palais impérial et qui sait: rencontre avec une geisha.
+      </p>
+      <a href="https://paypal.me/pools/c/8qPVm6uXze" class="pool-link">Cagnotte Kyoto <i class="icon-share"></i></a>
+    </div>
+    <div class="destination">
+      <img src="./src/img/tokyo.jpeg" alt="Picture of Tokyo" class="destination-photo">
+      <h3>Tokyo</h3>
+      <p class="description">
+        La capitale niponne, Tokyo est une ville tentaculaire, cosmopolite et futuriste.
+        Au programme: immersion dans les différents quartiers de Tokyo, combat de sumos, dégustation de brochettes ou encore enchères au thon dans le marché.
+      </p>
+      <a href="https://paypal.me/pools/c/8qPVcJataX" class="pool-link">Cagnotte Tokyo <i class="icon-share"></i></a>
+    </div>
+    <div class="destination">
+      <img src="./src/img/kanazawa.jpg" alt="Picture of Kanazawa" class="destination-photo">
+      <h3>Kanazawa et ses environs</h3>
+      <p class="description">
+        Joyau historique du Japon, Kanazawa rivalise avec Kyoto avec ses quartiers préservés et ses magnifiques jardins.
+        Au programme: musées d'arts, découverte de l'artisanat local et visite des plus beaux jardins du Japon.
+      </p>
+      <a href="https://paypal.me/pools/c/8qPAMVyigs" class="pool-link">Cagnotte Kanazawa <i class="icon-share"></i></a>
+    </div>
+  </div>
 </section>
 
 <div class="footer"></div>
